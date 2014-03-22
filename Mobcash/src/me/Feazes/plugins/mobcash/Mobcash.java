@@ -88,7 +88,7 @@ public class Mobcash extends JavaPlugin {
 			if (p.hasPermission("mobcash.admin")) {
 				if (args.length == 0) {
 					p.sendMessage(ChatColor.GOLD + "--------[Mobcash]--------");
-					p.sendMessage(ChatColor.GRAY+"v2.0 created by Feazes");
+					p.sendMessage(ChatColor.GRAY+"v2.4 created by Feazes");
 					p.sendMessage(ChatColor.GRAY+"- /mobcash reload");
 				} else if (args.length == 1) {
 					if (args[0].equalsIgnoreCase("reload")) {
