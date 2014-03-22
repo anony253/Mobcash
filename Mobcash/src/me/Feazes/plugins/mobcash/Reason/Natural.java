@@ -23,6 +23,15 @@ public class Natural implements Listener{
 					plugin.spawnedMobs.add(e.getEntity().getUniqueId());
 				}
 			}
+			
+		}
+		if (e.getSpawnReason() == SpawnReason.CHUNK_GEN) {
+			if (plugin.getConfig().getBoolean("Mobcash.Disable.Natural") == true) {
+				if (!plugin.spawnedMobs.contains(e.getEntity().getUniqueId())) {
+					plugin.spawnedMobs.add(e.getEntity().getUniqueId());
+				}
+			}
+			
 		}
 	}
 }
